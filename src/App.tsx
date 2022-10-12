@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import SignUp from './pages/signup';
 import {
@@ -7,6 +7,7 @@ import {
   Link
 } from 'react-router-dom'
 import SignIn from './pages/SignIn';
+import Chat from './pages/Chat';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<SignUp />} />
         <Route path='/signin' element={<SignIn />} />
+        <Route path='/chat' element={<Chat />} />
       </Routes>
     </>
   );
